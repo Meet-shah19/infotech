@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Image Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Page styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 30px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+
+            /* Automatically adjust columns */
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+            padding: 20px;
+        }
+
+        /* Images */
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+
+            /* Smooth hover effect */
+            transition: 0.3s;
+        }
+
+        /* Hover effect */
+        .gallery img:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+
+        /* Tablet */
+        @media (max-width: 800px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+
+        <img src="https://picsum.photos/400/300?random=1" alt="Image 1">
+
+        <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
+
+        <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
+
+        <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
+
+        <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
+
+        <img src="https://picsum.photos/400/300?random=6" alt="Image 6">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission Form</title>
+</head>
+<body>
+
+    <h2>Student Admission Form</h2>
+
+    <form>
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname">
+        <br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email">
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <label>Course Selection:</label><br>
+        <select name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="BCA">BCA</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="B.Com">B.Com</option>
+            <option value="MBA">MBA</option>
+        </select>
+        <br><br>
+
+        <label>Upload Documents:</label><br>
+        <input type="file" name="documents">
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Table</title>
+</head>
+<body>
+
+    <h2>Invoice</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+
+        <!-- Invoice Header using colspan -->
+        <tr>
+            <th colspan="4">ABC Store - Invoice</th>
+        </tr>
+
+        <!-- Column Headings -->
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+
+        <!-- Item Details -->
+        <tr>
+            <td>Laptop</td>
+            <td>1</td>
+            <td>₹50,000</td>
+            <td>₹50,000</td>
+        </tr>
+
+        <tr>
+            <td>Mouse</td>
+            <td>2</td>
+            <td>₹500</td>
+            <td>₹1,000</td>
+        </tr>
+
+        <!-- Tax and Grand Total using rowspan -->
+        <tr>
+            <td rowspan="2" colspan="2"><b>Payment Summary</b></td>
+            <td>Tax (18%)</td>
+            <td>₹9,180</td>
+        </tr>
+
+        <tr>
+            <td><b>Total</b></td>
+            <td><b>₹60,180</b></td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>

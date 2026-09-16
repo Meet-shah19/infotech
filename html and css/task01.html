@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation Bar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Remove default spacing */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #333;
+        }
+
+        /* Navigation list */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Navigation links */
+        li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+        }
+
+        /* Hover effect */
+        li a:hover {
+            background-color: #555;
+            color: #ffd700;
+        }
+
+        /* Responsive design for mobile */
+        @media screen and (max-width: 600px) {
+
+            ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            li {
+                width: 100%;
+                text-align: center;
+            }
+
+            li a {
+                padding: 12px;
+                border-bottom: 1px solid #555;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

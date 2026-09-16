@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Column Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /*Main content , column 1 */
+        .Hobby {
+            flex: 3;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /*Sidebar  , column 2 */
+        .Hobby {
+            flex: 1;
+            background-color: #1b73aa;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Heading */
+        h2 {
+            margin-top: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Main Content -->
+        <div class="Hobby">
+            <h2>My self</h2>
+            <p>
+                My name is Meet shah
+                I am in B.tech cse 
+
+            </p>
+
+            <p>
+                Flexbox is used to create this two-column layout.
+            </p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="Hobby">
+            <h2>Hobby</h2>
+            <p>• Play chess</p>
+            <p>• play out door games</p>
+            <p>• play tabla</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

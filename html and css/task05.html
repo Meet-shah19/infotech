@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Table</title>
+<meta name="viewport" content="width=device-width, initial-scale=3.0">
+
+    <style>
+        /* Page styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        /* Pricing container */
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px auto;
+        }
+
+        /* Pricing cards */
+        .plan {
+            width: 250px;
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        /* Hover effect */
+        .plan:hover {
+            transform: translateY(-10px);
+            border-color: #333;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Plan title */
+        .plan h2 {
+            color: #333;
+        }
+
+        /* Price */
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Features */
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+            line-height: 2;
+            color: #555;
+        }
+
+        /* Button */
+        .plan button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .plan button:hover {
+            background-color: #555;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 800px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .plan {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Pricing Plans</h1>
+
+    <div class="pricing-container">
+
+        <!-- Basic Plan -->
+        <div class="plan">
+            <h2>Basic</h2>
+            <p class="price">₹199</p>
+
+            <ul>
+                <li>✔ 1 Website</li>
+                <li>✔ Basic Support</li>
+                <li>✔ 5 GB Storage</li>
+                <li>✔ Email Support</li>
+            </ul>
+
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="plan">
+            <h2>Standard</h2>
+            <p class="price">₹499</p>
+
+            <ul>
+                <li>✔ 5 Websites</li>
+                <li>✔ Priority Support</li>
+                <li>✔ 20 GB Storage</li>
+                <li>✔ Email Support</li>
+            </ul>
+
+            <button>Choose Plan</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan">
+            <h2>Premium</h2>
+            <p class="price">₹999</p>
+
+            <ul>
+                <li>✔ Unlimited Websites</li>
+                <li>✔ 24/7 Support</li>
+                <li>✔ 100 GB Storage</li>
+                <li>✔ Premium Support</li>
+            </ul>
+
+            <button>Choose Plan</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

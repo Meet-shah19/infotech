@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="weather-app">
+
+    <!-- HEADER -->
+
+    <div class="header">
+        <h1>Weather App</h1>
+
+        <button id="unitBtn">
+            °C / °F
+        </button>
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="cityInput"
+            placeholder="Search city..."
+        >
+
+        <button id="searchBtn">
+            Search
+        </button>
+
+    </div>
+
+
+    <!-- MESSAGE -->
+
+    <p id="message"></p>
+
+
+    <!-- FAVORITES -->
+
+    <div class="favorites">
+
+        <div class="favorite-title">
+            <span>⭐ Favorites</span>
+            <small>Maximum 5</small>
+        </div>
+
+        <div id="favoriteCities"></div>
+
+    </div>
+
+
+    <!-- CURRENT WEATHER -->
+
+    <div class="weather-card">
+
+        <div class="city-header">
+
+            <div>
+                <h2 id="cityName">
+                    Search a city
+                </h2>
+
+                <p id="condition">
+                    Weather information
+                </p>
+            </div>
+
+
+            <!-- STAR -->
+
+            <button
+                id="favoriteBtn"
+                class="favorite-btn"
+                title="Add to favorites"
+            >
+                ☆
+            </button>
+
+        </div>
+
+
+        <div class="main-weather">
+
+            <div
+                id="weatherIcon"
+                class="weather-icon"
+            >
+                🌤️
+            </div>
+
+            <div>
+
+                <h3 id="temperature">
+                    --°C
+                </h3>
+
+                <p id="feelsLike">
+                    Feels like --°C
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DETAILS -->
+
+        <div class="weather-details">
+
+            <div class="detail">
+
+                <span>💧</span>
+
+                <p>Humidity</p>
+
+                <strong id="humidity">
+                    --%
+                </strong>
+
+            </div>
+
+
+            <div class="detail">
+
+                <span>💨</span>
+
+                <p>Wind</p>
+
+                <strong id="wind">
+                    -- km/h
+                </strong>
+
+            </div>
+
+
+            <div class="detail">
+
+                <span>🌧️</span>
+
+                <p>Rain</p>
+
+                <strong id="rainChance">
+                    --%
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUN -->
+
+        <div class="sun-info">
+
+            <div>
+                🌅
+                <span>Sunrise</span>
+                <strong id="sunrise">
+                    --:--
+                </strong>
+            </div>
+
+            <div>
+                🌇
+                <span>Sunset</span>
+                <strong id="sunset">
+                    --:--
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 5 DAY FORECAST -->
+
+    <div class="forecast-section">
+
+        <div class="forecast-header">
+
+            <h2>5 Day Forecast</h2>
+
+            <button id="refreshBtn">
+                🔄
+            </button>
+
+        </div>
+
+
+        <div
+            id="forecast"
+            class="forecast"
+        ></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
